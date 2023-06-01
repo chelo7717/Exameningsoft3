@@ -1,5 +1,5 @@
-function sumar(a, b) {
-  return a + b;
+function cajero(montoventa, Efectivo) {
+  return Efectivo - montoventa;
 }
 
-export default sumar;
+export default cajero;

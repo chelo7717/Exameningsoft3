@@ -1,7 +1,10 @@
-import sumar from "./sumador.js";
+import cajero from "./sumador.js";
 
-describe("Sumar", () => {
-  it("deberia sumar dos numeros", () => {
-    expect(sumar(3, 2)).toEqual(5);
+describe("cajero", () => {
+  it("deberia mostrar el cambio que resivira el cliente", () => {
+    expect(cajero(10, 20)).toEqual(10);
+  });
+  it("deberia mostrar el cambio que resivira el cliente", () => {
+    expect(cajero(15, 65)).toEqual(50);
   });
 });
