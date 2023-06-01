@@ -1,3 +1,4 @@
+import cambio from "./cambiomonedas.js";
 import cajero from "./sumador.js";
 import verificador from "./verificador.js";
 
@@ -19,4 +20,10 @@ describe("Debe ingresar ambos datos", () => {
   it("no deberia mostrar nada si se introduce monto y efectio ", () => {
     expect(verificador(15, 50)).toEqual(true);
   });
+});
+describe("Debe mostrar el cambio en monedas", () => {
+  it("deberia mostrar cuanto cambio en monedas tengo", () => {
+    expect(cambio(19)).toEqual([5,5,5,2,2]);
+  });
+  
 });
