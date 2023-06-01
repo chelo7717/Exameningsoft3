@@ -1,4 +1,5 @@
 import cajero from "./sumador";
+import verificador from "./verificador";
 
 const Monto = document.querySelector("#Monto-Venta");
 const Efectivo = document.querySelector("#Efectivo");
