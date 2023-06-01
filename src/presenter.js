@@ -1,15 +1,15 @@
-import sumar from "./sumador";
+import cajero from "./sumador";
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
-const form = document.querySelector("#sumar-form");
+const Monto = document.querySelector("#Monto-Venta");
+const Efectivo = document.querySelector("#Efectivo");
+const form = document.querySelector("#cajero-form");
 const div = document.querySelector("#resultado-div");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
+  const MontodeVenta = Number.parseInt(Monto.value);
+  const EfectivoPagado = Number.parseInt(Efectivo.value);
 
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
+  div.innerHTML = "<p>" + cajero(MontodeVenta, EfectivoPagado) + "</p>";
 });
